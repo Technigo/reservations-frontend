@@ -71,6 +71,7 @@ const App = () => {
   return (
     <>
       <h1>The restaurant</h1>
+      <hr/>
       <p>{message}</p>
       <h2>Book a table</h2>
       <form onSubmit={handleNewReservation}>
@@ -108,7 +109,7 @@ const App = () => {
         />
         <button type="submit">Book now</button>
       </form>
-      
+      <hr/>
       <h2>Reservations</h2>
       <section className="reservations">
         {allReservations.map((reservation) => (
